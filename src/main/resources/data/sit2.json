@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "environment": "sit2",
+      "email": "autotest@auto.com",
+      "iOSEmail": "iostest2@auto.com",
+      "androidEmail": "androidtest1@auto.com",
+      "password": "qwerty1",
+      "name": "autotestname",
+      "surname": "autotestsername",
+      "gender": "Female",
+      "birthday": "15/01/1987",
+      "phone": "1234567890"
+    },
+    {
+      "environment": "sit1",
+      "email": "autotest@auto.com",
+      "iOSEmail": "iostest2@auto.com",
+      "androidEmail": "androidtest1@auto.com",
+      "password": "qwerty1",
+      "name": "autotestname",
+      "surname": "autotestsername",
+      "gender": "Female",
+      "birthday": "15/01/1987",
+      "phone": "1234567890"
+    }
+  ],
+  "creditCard": [
+    {
+      "environment": "sit2",
+      "cardNumber": "4111111111111111",
+      "expDate": "0120",
+      "cvc": "123"
+    }
+  ],
+  "address": [
+    {
+      "environment": "sit2",
+      "city": "New York",
+      "province": "NY",
+      "street": "autoteststreet",
+      "floor": "autotestfloor",
+      "code": "10001"
+    }
+  ]
+}
