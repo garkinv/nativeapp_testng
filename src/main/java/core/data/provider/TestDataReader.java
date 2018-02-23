@@ -11,6 +11,9 @@ import static java.lang.String.format;
 import static java.lang.System.getProperty;
 import static org.springframework.util.ResourceUtils.getFile;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 public class TestDataReader {
     public TestData testData;
 

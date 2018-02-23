@@ -9,6 +9,9 @@ import static java.lang.String.format;
 import static org.apache.logging.log4j.LogManager.getLogger;
 import static org.openqa.selenium.OutputType.BYTES;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 public class AllureListener {
 
     private static final Logger LOG = getLogger();

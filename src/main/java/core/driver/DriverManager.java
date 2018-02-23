@@ -6,6 +6,9 @@ import org.apache.logging.log4j.Logger;
 import static core.driver.DriverFactory.createDriver;
 import static org.apache.logging.log4j.LogManager.getLogger;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 public class DriverManager {
     private static final Logger LOG = getLogger();
 

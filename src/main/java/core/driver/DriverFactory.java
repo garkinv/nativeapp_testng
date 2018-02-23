@@ -23,6 +23,9 @@ import static java.lang.System.setProperty;
 import static org.apache.logging.log4j.LogManager.getLogger;
 import static org.springframework.util.ResourceUtils.getFile;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 public class DriverFactory {
 
     private static final Logger LOG = getLogger();

@@ -11,6 +11,9 @@ import static core.driver.DriverManager.*;
 import static core.reporting.AllureListener.takeScreenshot;
 import static org.apache.logging.log4j.LogManager.getLogger;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 public class TestListener extends TestListenerAdapter {
 
     private static final Logger LOG = getLogger();

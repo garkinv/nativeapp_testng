@@ -5,6 +5,9 @@ import io.appium.java_client.ios.IOSDriver;
 
 import static core.driver.DriverManager.getDriver;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 public class Constants {
     public static final class Configuration {
         public static final String PLATFORM_PROPERTY = "platform";

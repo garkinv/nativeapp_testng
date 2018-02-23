@@ -7,6 +7,9 @@ import lombok.Getter;
 
 import java.util.List;
 
+/**
+ * Created by Vladimir Garkin on 2/23/18
+ */
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
