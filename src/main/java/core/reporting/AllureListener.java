@@ -23,7 +23,7 @@ public class AllureListener {
 
     @Attachment(value = "{0}", type = "image/png")
     public static byte[] takeScreenshot(String screenshotName) {
-        LOG.debug(format("Screenshot [%s] taken", screenshotName));
+        LOG.info(format("Screenshot for [%s] taken", screenshotName));
         return getDriver().getScreenshotAs(BYTES);
     }
 }

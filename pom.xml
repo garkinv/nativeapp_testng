@@ -9,13 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!--Rest of versions-->
         <java.version>1.8</java.version>
         <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
-        <testng.version>6.11</testng.version>
+        <testng.version>6.14.2</testng.version>
         <appium.version>5.0.1</appium.version>
         <log4j2.version>2.1</log4j2.version>
-        <aeon.version>1.0.4</aeon.version>
         <allure-testng-adaptor.version>1.4.23</allure-testng-adaptor.version>
         <allure-maven-plugin.version>2.6</allure-maven-plugin.version>
         <allure-testng>2.0-BETA3</allure-testng>

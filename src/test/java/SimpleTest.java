@@ -1,6 +1,7 @@
 import base.BaseTest;
 import core.reporting.QtestTests;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -14,7 +15,8 @@ public class SimpleTest extends BaseTest {
     @Title("specified description for allure report")
     @Features("Favorites")
     @QtestTests({"TC-12312", "TC-12321ss"})
-    public void simpleTest() {
-        Assert.assertTrue(true);
+    @Parameters("ios_only")
+    public void test1() {
+        Assert.assertTrue(false);
     }
 }

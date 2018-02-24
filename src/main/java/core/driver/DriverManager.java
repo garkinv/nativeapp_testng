@@ -14,22 +14,24 @@ public class DriverManager {
 
     private static boolean isAppOpened;
 
-    private static ThreadLocal<AppiumDriver> appiumDriver = new ThreadLocal<>();
+    private static AppiumDriver appiumDriver = null;
 
     public static AppiumDriver getDriver() {
-        if (appiumDriver.get() == null) {
+        if (appiumDriver == null) {
             LOG.info("Creating driver and launching app");
-            appiumDriver.set(createDriver());
+            appiumDriver = createDriver();
             isAppOpened = true;
             LOG.info("App opened");
         }
-        return appiumDriver.get();
+        return appiumDriver;
     }
 
     public static void launchApp() {
         if (!isAppOpened) {
             LOG.info("Launching app");
             getDriver();
+            // this check needs for the first run, because getDriver() runs app already.
+            if(!isAppOpened) getDriver().launchApp();
             isAppOpened = true;
             LOG.info("App launched");
         }

@@ -31,21 +31,21 @@ public class TestListener extends TestListenerAdapter {
     }
 
     @Override
-    public synchronized void onTestStart(ITestResult result) {
+    public void onTestStart(ITestResult result) {
         super.onTestStart(result);
         launchApp();
         LOG.info("Test started: " + result.getName());
     }
 
     @Override
-    public synchronized void onTestSuccess(ITestResult iTestResult) {
+    public void onTestSuccess(ITestResult iTestResult) {
         super.onTestSuccess(iTestResult);
         closeApp();
         LOG.info("Test succeed: " + iTestResult.getName());
     }
 
     @Override
-    public synchronized void onTestFailure(ITestResult iTestResult) {
+    public void onTestFailure(ITestResult iTestResult) {
         super.onTestFailure(iTestResult);
         takeScreenshot(iTestResult.getName());
         closeApp();

@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Main Listeners">
     <listeners>
-        <listener class-name="core.listeners.TestListener"/>
         <listener class-name="core.listeners.Transformer"/>
     </listeners>
 

@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 /**
  * Created by Vladimir Garkin on 2/23/18
  */
-public class AnnotationTransformer implements IAnnotationTransformer {
+public class Transformer implements IAnnotationTransformer {
     @Override
     public void transform(ITestAnnotation iTestAnnotation, Class aClass, Constructor constructor, Method method) {
         iTestAnnotation.setRetryAnalyzer(Retry.class);
